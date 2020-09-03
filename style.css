@@ -1,0 +1,95 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+h2{
+  font-size:3rem;
+  background-color:#1B2B34;
+  color:#eee;
+  padding:.5rem 3rem;
+  border-radius:4px;
+  margin-bottom:3rem;
+}
+h4{
+  margin-top: 2.5rem;
+  font-size:3rem;
+}
+h4 a{
+  text-decoration:none ;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-family:sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+}
+nav{
+  background:#ddd;
+  height:8rem;
+}
+.nav-links{
+  margin-top: 2.5rem;
+  list-style:none;
+  display:flex;
+
+}
+.nav-links a{
+  margin-top: 2rem;
+  text-decoration:none;
+  color:#1B2B34;
+  font-size:2rem;
+  margin-left:1.8rem;
+  font-weight:600;
+}
+.nav-container{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  align-content:center;
+  align-self:center;
+}
+.main {
+  display: grid;
+  grid-template-rows: 100vh;
+}
+.container{
+  display:grid;
+  margin: 2rem auto;
+  grid-template-rows: min-content;
+  justify-items: center;
+  align-content: center;
+}.btn{
+  background-color: #FFDD40;
+  border: none;
+  padding: .8rem 1.5rem;
+  font-size: 1.9rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.5);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.btn:hover{
+        background-color: rgba(229,201,74);
+      }
+.btn:focus{
+  outline: none;
+}
+@media screen and (max-width:550px){
+  h2{
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width:370px){
+  h2{
+    font-size: 1.6rem;
+  }
+  h4{
+    font-size: 1.6rem;
+  }
+}
